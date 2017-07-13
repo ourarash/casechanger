@@ -16,9 +16,11 @@ Ionic based app for changing the case of the text. Includes:
 
 ― John Green, Paper Towns
 
-<div>
+<div style='text-align:center'>
 <img src="screenshots/2.png?raw=true" align="left"  width="200px" >
 <img src="screenshots/1.png?raw=true" align="left"  width="200px" >
 </div>
 <!-- ![screenshot1](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
 ![screenshot2](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"} -->
+
+ [Download on Google Play](https://play.google.com/store/apps/details?id=com.casechanger.app) for Android
