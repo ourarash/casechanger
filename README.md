@@ -15,6 +15,7 @@ Ionic based app for changing the case of the text. Includes:
 'Yeah. I'm a big believer in random capitalization. The rules of capitalization are so unfair to words in the middle.” 
 
 ― John Green, Paper Towns
+<img src="screenshots/1.png?raw=true" align="left"  width="200px" >
 
-![screenshot1](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
-![screenshot2](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
+<!-- ![screenshot1](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
+![screenshot2](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"} -->
