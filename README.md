@@ -1,7 +1,7 @@
 
 ## Case Changer
 
-"a N   A P P   F o R   C r e a T I N g   r a n d O M   C A p I T A L I z a T I o N   T E X T   A n d   s h a R E   i T   W I T h   f r i E N D s ."
+a&nbsp;N&nbsp;&nbsp;&nbsp;A&nbsp;P&nbsp;P&nbsp;&nbsp;&nbsp;F&nbsp;o&nbsp;R&nbsp;&nbsp;&nbsp;C&nbsp;r&nbsp;e&nbsp;a&nbsp;T&nbsp;I&nbsp;N&nbsp;g&nbsp;&nbsp;&nbsp;r&nbsp;a&nbsp;n&nbsp;d&nbsp;O&nbsp;M&nbsp;&nbsp;&nbsp;C&nbsp;A&nbsp;p&nbsp;I&nbsp;T&nbsp;A&nbsp;L&nbsp;I&nbsp;z&nbsp;a&nbsp;T&nbsp;I&nbsp;o&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;E&nbsp;X&nbsp;T&nbsp;&nbsp;&nbsp;A&nbsp;n&nbsp;d&nbsp;&nbsp;&nbsp;s&nbsp;h&nbsp;a&nbsp;R&nbsp;E&nbsp;&nbsp;&nbsp;i&nbsp;T&nbsp;&nbsp;&nbsp;W&nbsp;I&nbsp;T&nbsp;h&nbsp;&nbsp;&nbsp;f&nbsp;r&nbsp;i&nbsp;E&nbsp;N&nbsp;D&nbsp;s&nbsp;.
 
 Ionic based app for changing the case of the text. Includes:
 
