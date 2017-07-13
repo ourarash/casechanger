@@ -22,6 +22,7 @@ Ionic based app for changing the case of the text. Includes:
 </div>
 <!-- ![screenshot1](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
 ![screenshot2](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"} -->
-<div>
- [Download on Google Play](https://play.google.com/store/apps/details?id=com.casechanger.app) for Android
- </div>
+
+### Download on App Store
+
+[Download on Google Play](https://play.google.com/store/apps/details?id=com.casechanger.app) for Android
