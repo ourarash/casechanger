@@ -1,17 +1,86 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Case Changer</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+    <div class="p1-spinner" *ngIf="showSpinner">
+        <ion-spinner name="dots"></ion-spinner>
+    </div>
+
+    <!--<ion-item>-->
+    <ion-card>
+        <textarea class='my-textarea' [(ngModel)]="todo.text" name="text" placeholder="Type or paste your text here" rows="8">
+
+        </textarea>
+    </ion-card>
+    <!--</ion-item>-->
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(0)'>RaNDoMiZe</button>
+            </ion-col>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(1)'>ALL CAPS</button>
+            </ion-col>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(2)'>all lows</button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(3)'>Title Case</button>
+            </ion-col>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(4)'>Sentence case</button>
+            </ion-col>
+
+
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(6)'>D o u b l e  S p a c e</button>
+            </ion-col>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(7)'>Single Space</button>
+            </ion-col>
+
+        </ion-row>
+
+
+    </ion-grid>
+
+
+
+
+    <!--<div class>-->
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='process(5)'>Clear</button>
+            </ion-col>
+            <ion-col>
+                <button class='my-button' outline ion-button (click)='clipBoardCopy()'>Copy</button>
+            </ion-col>
+            <ion-col>
+                <!--<button class='my-button' outline ion-button (click)='clipBoardPaste()'>Paste</button>-->
+                <button class='my-button' outline ion-button (click)='share()'>
+                        <ion-icon name='share'>  </ion-icon>
+                        <span style='margin-left:5px'>Share</span>
+                        </button>
+
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+
+
+
+    <!--</div>-->
+
+
 </ion-content>

@@ -1,3 +1,18 @@
 page-home {
-
+    .my-button {
+        width: 100%;
+    }
+    .my-textarea {
+        width: 100%;
+        border: none;
+        resize: none;
+    }
+    .col {
+        padding: 2px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .row {
+        padding: 0px;
+    }
 }
