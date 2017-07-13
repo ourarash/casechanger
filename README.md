@@ -16,5 +16,5 @@ Ionic based app for changing the case of the text. Includes:
 
 ― John Green, Paper Towns
 
-![screenshot1](screenshots/1.png?raw=true "Optional Title")
-![screenshot2](screenshots/1.png?raw=true "Optional Title")
+![screenshot1](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
+![screenshot2](screenshots/1.png?raw=true "Optional Title"){:height="50%" width="50%"}
