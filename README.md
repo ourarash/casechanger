@@ -14,4 +14,4 @@ Ionic based app for changing the case of the text. Includes:
 
 ― John Green, Paper Towns
 
- a N   A P P   F o R   C r e a T I N g   r a n d O M   C A p I T A L I z a T I o N   T E X T   A n d   s h a R E   i T   W I T h   f r i E N D s .
+a N   A P P   F o R   C r e a T I N g   r a n d O M   C A p I T A L I z a T I o N   T E X T   A n d   s h a R E   i T   W I T h   f r i E N D s .
