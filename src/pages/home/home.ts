@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import {ToastController, NavController , Platform} from 'ionic-angular';
 import { Clipboard } from '@ionic-native/clipboard';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { NavController, Platform, ToastController } from 'ionic-angular';
 
-declare var cordova : any;
+
+
+
+declare var cordova: any;
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -22,11 +25,12 @@ export class HomePage {
     private clipboard: Clipboard,
     private socialSharing: SocialSharing
   ) {
-    this.todo.text = `“Interesting capitalization,' I said.
+    //     this.todo.text = `“Interesting capitalization,' I said.
 
-'Yeah. I'm a big believer in random capitalization. The rules of capitalization are so unfair to words in the middle.” 
+    // 'Yeah. I'm a big believer in random capitalization. The rules of capitalization are so unfair to words in the middle.” 
 
-― John Green, Paper Towns`;
+    // ― John Green, Paper Towns`;
+    this.todo.text = "";
     this.showSpinner = false;
   }
 
@@ -39,9 +43,20 @@ export class HomePage {
     switch (op) {
       //random
       case 0: {
-        this.transformedStr = this.randomize(this.todo.text);
+        this.transformedStr = this.todo.text;
+        var rand = Math.floor((Math.random() * 15) + 1);
+        console.log('rand: ' + JSON.stringify(rand) );
+        for (var i = 0; i < rand; i++) {
+          
+          setTimeout(() => {
+            this.transformedStr = this.randomize(this.todo.text);
+            this.todo.text = this.transformedStr;
+            // console.log('this.todo.text: ' + JSON.stringify(this.todo.text) );
+          }, i*50);
+          
+        }
         break;
-      
+
       }//case
       //All caps  
       case 1: {
@@ -51,18 +66,18 @@ export class HomePage {
           this.transformedStr += l2;
         }
         break;
-        
+
       }
       // all lows  
-       case 2: {
+      case 2: {
         for (var l of this.todo.text) {
           var l2;
           l2 = l.toLowerCase();
           this.transformedStr += l2;
         }
         break;
-        
-      }  
+
+      }
       //Title case  
       case 3: {
         this.transformedStr = this.titleCase(this.todo.text);
@@ -78,22 +93,22 @@ export class HomePage {
         this.transformedStr = '';
         break;
       }
-      
+
       case 6: {
         this.transformedStr = this.doubleSpace(this.todo.text);
         break;
-      }  
+      }
 
       case 7: {
         this.transformedStr = this.halfSpace(this.todo.text);
         break;
-      }  
+      }
     }//switch
-    
-    
-    
+
+
+
     console.log('transformedStr: ' + JSON.stringify(this.transformedStr));
-    
+
     this.todo.text = this.transformedStr;
 
   }
@@ -108,8 +123,9 @@ export class HomePage {
       else
         l2 = l.toLowerCase();
       result += l2;
-          
+
     }
+    
     return result;
   }
   titleCase(str) {
@@ -123,7 +139,7 @@ export class HomePage {
   sentenceCase(str) {
     str = str.toLowerCase();
     var rg = /(^\w{1}|[\.\?\!]\s*\w{1})/gi;
-    
+
     str = str.replace(rg, function (toReplace) {
       return toReplace.toUpperCase();
     });
@@ -160,10 +176,10 @@ export class HomePage {
     if (this.platform.is('cordova')) {
       if (cordova.plugins.Keyboard.isVisible) {
         this.keyboard.close();
-                
+
       } else {
         this.keyboard.show();
-                
+
       }
     }
   }
@@ -191,23 +207,23 @@ export class HomePage {
         })
           .then(() => {
             this.showSpinner = false;
-        })  
-        .catch((e) => {
-          alert("Error:" + e);
-        });
-       
+          })
+          .catch((e) => {
+            alert("Error:" + e);
+          });
+
       }
       catch (e) {
         alert("Try Error:" + e);
       }
-    
+
     }
 
   }
 
   doubleSpace(str) {
     //  str = str.toLowerCase().split(' ');
-    console.log('str: ' + JSON.stringify(str) );
+    console.log('str: ' + JSON.stringify(str));
     var str2 = "";
     for (var i = 0; i < str.length; i++) {
       str2 = str2 + ' ' + str[i];
@@ -217,16 +233,16 @@ export class HomePage {
 
   halfSpace(str) {
     //  str = str.toLowerCase().split(' ');
-    console.log('str: ' + JSON.stringify(str) );
+    console.log('str: ' + JSON.stringify(str));
     var str2 = "";
     for (var i = 0; i < str.length - 1; i++) {
-      if (str[i+1]==' '){
+      if (str[i + 1] == ' ') {
         str2 = str2 + str[i];
         i++;
       } else {
         str2 = str2 + str[i];
       }
-      
+
     }
     return str2;
   }
